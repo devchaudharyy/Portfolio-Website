@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev_Developer Portfolio</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <div class="left">
+                DEV'S DEVELOPER PORTFOLIO
+            </div>
+            <div class="right">
+                <ul>
+                    <li> <a href="#home">Home</a> </li>
+                    <li> <a href="#skills">Skills</a> </li>
+                    <li> <a href="#projects">Projects</a> </li>
+                    <li> <a href="#links">Links</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <img src="bg2.png" height="400rem" width="450rem">
+            </div>
+            <div class="rightsection">
+                Hey there!
+                <div> My name is <span class="name-col">Dev Chaudhary</span></div>
+                <div>I am a zealous</div>
+                <span id="element"></span>
+            </div>
+        </section>
+        <hr id="skills">
+        <section class="secondsection">
+            <h1>SKILLS</h1>
+            <div class="tab-titles">
+                <div class="tab-links active-link" onclick="opentab('languages')">Languages</div>
+                <div class="tab-links" onclick="opentab('libraries')">Libraries/Frameworks</div>
+                <div class="tab-links" onclick="opentab('databases')">DataBases</div>
+                <div class="tab-links" onclick="opentab('tools')">Tools</div>
+            </div>
+            <div class="tab-contents active-tab" id="languages">
+                <ul>
+                    <li>C++/C</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="libraries">
+                <ul>
+                    <li>NumPy</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>React.js</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="databases">
+                <ul>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Excel</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="tools">
+                <ul>
+                    <li>Windows</li>
+                    <li>GitHub</li>
+                    <li>MacOS</li>
+                    <li>Google Cloud Console</li>
+                </ul>
+            </div>
+        </section>
+        <hr id="projects">
+        <div class="thirdsection">
+            <h1>PROJECTS</h1>
+            <div class="project1">
+                <h2>Mismanaged Plastic Waste Analysis - </h2>
+                <div class="eda">
+                    <ul>
+                        <li>Performed data cleaning and manipulation</li>
+                        <li>Analysed trends in mismanaged plastic waste generation<br> and acquired important insights
+                        </li>
+                        <li>Improved management of plastic waste across globe <br> identifying major waste producing
+                            countires</li>
+                        <a href="https://github.com/devchaudharyy/Mismanaged_plastic_waste_analysis" target=" _blank"
+                            class="learnmore">Github link..</a>
+                    </ul>
+                </div>
+                <h2>GYM Registration Page - </h2>
+                <div class="gym">
+                    <ul>
+                        <li>Designed an introductory and registration web page for<br> a gym website</li>
+                        <li>Implemented core fundamentals of HTML and CSS.</li>
+                        <a href="https://github.com/devchaudharyy/Gym_website" target=" _blank" class="learnmore">Github
+                            link..</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr id="links">
+        <div class="links">
+            <h1>LINKS</h1>
+            <div class="logos">
+                <a href="https://leetcode.com/devchaudharyyy/" target="_blank"> <img src="leetcode.png"
+                        alt="LeetCode link"></a>
+                <a href="https://www.hackerrank.com/devchaudharyy?hr_r=1" target="_blank"><img src="hackerrank.png"
+                        alt="HackerRank link"></a>
+                <a href="https://www.codechef.com/users/devchaudhary" target="_blank"><img src="codechef.jpeg"
+                        alt="CodeChef link" class="cc"></a>
+                <a href="https://auth.geeksforgeeks.org/user/devchaudharyy31/practice" target="_blank"><img
+                        src="geeksforgeeks.jpeg" alt="GeeksForGeeks link" class="cc"></a>
+                <a href="https://www.cloudskillsboost.google/public_profiles/f2aa9841-7db5-48f6-aa1b-24c46127ca0d"
+                    target="_blank"><img src="google-cloud-platform.svg" alt="Google Cloud link"></a>
+            </div>
+        </div>
+        <hr id="contact">
+        <h1 class="contact">CONTACT ME</h1>
+        <div class="container">
+            <div class="leftcontact">
+                <p>devchaudhary0419@gmail.com</p>
+                <p>+91 8368483991</p>
+                <div class="btn">
+                    <a href="Dev_9_6_23.pdf" download class="cv">Download CV</a>
+                </div>
+            </div>
+            <div class="rightcontact">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                    <textarea name="Message" rows="'6" placeholder="Your message for me!!"></textarea>
+                    <button type="submit" class="cv cv2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="first-footer"><b>Dev's Developer Portfolio</b></div>
+            <div class="second-footer">
+                <ul>
+                    <li> <a href="#home"> Home </a> </li>
+                    <li> <a href="#skills"> Skills </a> </li>
+                    <li> <a href="#projects"> Project </a> </li>
+                    <li> <a href="#links"> Links </a> </li>
+                    <li> <a href="#contact"> Contact </a> </li>
+                </ul>
+            </div>
+            <div class="third-footer">
+                <a href="https://www.linkedin.com/in/dev-chaudhary-413190214/" target="_blank">
+                    <img class="linkedin" src="linkedin.png"> </a>
+            </div>
+
+            <div class="fourth-footer">
+                <a href="https://github.com/devchaudharyy" target="_blank">
+                    <img class="github" src="github.png"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            Copyright &#169 devchaudharyportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Data Analyst.', 'Web Designer.'],
+            typeSpeed: 60,
+        });
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+    </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwticZqONumqMkfFloBJq1DQ60UANdSYD_O1NdCW0B8h2eXuxSg2vD9EDYYV6TNhOPL/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = " Details sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000
+                )
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>

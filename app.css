@@ -1,0 +1,376 @@
+/* ----CSS FOR HTML AND BODY */
+*{
+    margin : 0;
+    padding : 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color : black;
+    color : white;
+    font-family: 'VT323', monospace;
+}
+
+/* ----FIRST SECTION---- */
+nav {
+    display : flex;
+    justify-content : space-around;
+    align-items: center;
+    height: 70px;
+    background-color: white;
+    color: black;
+}
+
+.left{
+    font-size: 3.5rem;
+}
+
+nav ul {
+    display : flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin : 0 20px;
+    font-size: 1.5rem;
+
+}
+ nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.5s;
+    display: inline-block;
+ }
+
+ nav ul li a:hover{
+    color: #ff004f;
+    text-decoration: underline;
+    transform: translateY(-5px);  
+ }
+
+
+.firstsection{
+    display : flex;
+    justify-content: space-around;
+    margin: 60px 0px;
+}
+
+.rightsection{
+    font-size: 3rem;
+    padding-top: 80px ;
+}
+.name-col{
+    color: #ff004f;
+}
+#element{
+    color: #ff004f;
+}
+main hr {
+    border: 0;
+    background-color: white;
+    height: 5px;
+    margin : 90px 90px 40px 90px;
+}
+
+/* ----SECOND SECTION---- */
+
+.secondsection{
+ margin: auto;
+ max-width: 80vw;
+ height: 40vh;
+ font-size: 2rem;
+}
+
+.secondsection h1{
+    margin-bottom: 20px;
+}
+
+.tab-titles {
+ display: flex;
+ margin : 20px 0px 40px;   
+}
+ 
+.tab-links {
+    margin-right: 50px;
+    font-size: 25px;
+    cursor :pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: #ff004f;
+    left : 0;
+    bottom : -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+width: 100%;
+}
+  
+.tab-contents{
+    margin : 6px;
+    display: none;
+}
+.tab-contents ul{
+    list-style-type : none;
+}
+
+.tab-contents ul li::before {
+    content: "\2022"; 
+    color: #ff004f; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 0.8em;
+    margin-left: 0em; 
+  }
+  .tab-contents.active-tab{
+    display: block;
+
+  }
+
+  /*----THIRD SECTION----*/
+
+  .thirdsection{
+    margin: auto;
+    max-width: 80vw;
+    height: 67vh;
+   }
+
+   .thirdsection h1{
+       margin-bottom: 20px;
+       font-size: 3rem;
+   }
+
+.thirdsection ul{
+    list-style-type : none;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+.thirdsection ul li::before {
+    content: "\2022"; 
+    color: #ff004f; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 0.8em;
+    margin-left: 0em; 
+  }
+  .eda{
+    display: flex;
+    justify-content: right  ;
+  }
+  .gym{
+    display: flex;
+    justify-content: right;
+  }
+  .learnmore{
+    color: #ff004f;
+    padding: 10px 10px;
+    border-radius: 80%;
+  }
+  .learnmore:hover{
+    box-shadow: rgb(255, 255, 255) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 15px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  }
+  h2{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #ff004f ;
+    width: fit-content;
+  }
+  /* ----FOURTH SECTION---- */
+  .links    {
+    margin: auto;
+    max-width: 80vw;
+    height: 35vh;
+   }
+
+   .links h1{
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.logos img{
+    width: 10rem;
+    height: 10rem;
+    margin: 10px 14px;
+    border-radius: 50px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.logos img:hover{
+
+    box-shadow: #ff004f 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    transform: translateY(-8px);
+}
+
+/* ----Contact secton ---- */
+.contact{
+    margin-left: 126px;
+    max-width: 80vw;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    display: inline-block;
+   }
+   
+.leftcontact p{
+    font-size: 1.5rem;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    
+}
+
+.container{
+    height: 80vh;
+    display: flex;
+    justify-content: top;
+    align-items: tops;
+    padding-top: 0;
+}
+
+.leftcontact{
+    flex-basis: 30%;
+    padding-left: 130px;
+    line-height: 50px;
+}
+.rightcontact {
+    flex-basis: 65% ;
+}
+
+.cv{
+    text-decoration: none;
+    color: white;
+    background: #ff004f;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px 20px;
+    border-radius: 6px;
+    line-height-step: 5px;
+    transition: background 0.5s;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.cv:hover{
+    background: #573a43;
+    transform: translateY(-5px);
+}
+
+.rightcontact form{
+    width: 80%;
+}
+form input, form textarea{
+    width: 80%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    background: #262625;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+form textarea{
+    height: 30vh;
+}
+
+.cv2{
+padding: 14px 60px;
+font-size: 18px;
+margin-top: 10px;
+cursor: pointer;
+border: none;
+}
+
+#msg{
+color: green;
+margin-top: 2px ;
+display: block;
+}
+/*----FOOTER----*/
+
+footer{
+    background-color: white;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Courier New', Courier, monospace;
+    padding : 10px 10px;
+}
+
+.copyright{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer hr {
+    border: 0;
+    background-color: black;
+    height: 1px;
+    margin: 0px 350px;
+}
+
+.first-footer{
+    display : flex;
+    align-items: center;
+}
+.second-footer ul{
+    list-style-type: none;
+}
+.second-footer ul li a {
+    text-decoration: none;
+    color: black;
+ }
+ .second-footer ul li a:hover{
+    color: #ff004f;
+    text-decoration: underline;
+ }
+ .linkedin {
+    width: 82px;
+    height: 78px;
+ }
+ .third-footer{
+    display : flex;
+    align-items: center;
+}
+
+.fourth-footer{
+    display : flex;
+    align-items: center;
+}
+
+.github {
+    width: 82px;
+    height: 78px;
+   
+ }
+ .third-footer img, .fourth-footer img {
+    transition: transform 0.5s;
+    display: inline-block;
+    border-radius: 90%;
+ }
+ .third-footer img:hover, .fourth-footer img:hover{
+    transform: translateY(-5px);
+    box-shadow: #ff004f 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    transform: translateY(-8px);
+ }
+
+/* Making site Responsive */
+@media screen and (max-widht : 1097px ){
+.firstsection{
+    flex-direction: column;
+}
+}
